@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>Image Filter</title>
+<script src="./scripts/xmlToJson.js"></script>
+<script src="./scripts/jquery-1.10.2.min.js"></script>
+<script src="main.js"></script>
+</head>
+<body onload="main();">
+Image URL:
+<input type="text" id="imgUrl" size="80"><button onclick="loadImage();">Load</button>
+<br/>
+Palette-xml URL:
+<input type="text" size="80"><button onclick="loadPalette();">Load</button>
+</br>
+<button id="btnApply" onclick="applyPalette();" disabled>Apply</button>
+<br/>
+<canvas width="640px" height="480px" id="mycanvas"></canvas>
+</body>
+</html>
